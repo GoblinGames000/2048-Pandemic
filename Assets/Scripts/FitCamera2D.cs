@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using System;
+[ExecuteAlways]
 public class FitCamera2D : MonoBehaviour
 {
     public enum FitType

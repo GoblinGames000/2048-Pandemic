@@ -79,12 +79,16 @@ public class MobileAd : MonoBehaviour
 		adCooldownRemaining = adCooldownTime;
 	}
 
+	public string AndroidAdUnitID;
+	public string IOSUnitID;
 	private void RequestInterstitial()
 	{
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-7242052781619146/6090721233";
+         adUnitId =AndroidAdUnitID;
 #elif UNITY_IOS
 		string adUnitId = "ca-app-pub-7242052781619146/4302980935";
+		 adUnitId = IOSUnitID;
 #endif
 
 		// Initialize an InterstitialAd.
