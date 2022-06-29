@@ -29,8 +29,15 @@ public class MobileAd : MonoBehaviour
 	// Countdown UI stuff
 	public GameObject adCooldownRedCircle;
 	public TextMeshProUGUI adCooldownText;
-	
 
+	[Header("Android Unit Ids")] 
+	public string BannerId;
+	public string InterstatiolId;
+	public string RewardedVideoId;
+	[Header("IOS Unit Ids")] 
+	public string BannerIdIOS;
+	public string InterstatiolIdIOS;
+	public string RewardedVideoIdIOS;
 
 	void Start()
 	{
@@ -38,8 +45,11 @@ public class MobileAd : MonoBehaviour
 		string adUnitId;
 #if UNITY_ANDROID
             adUnitId = "ca-app-pub-7242052781619146/8110379919";
+            adUnitId = RewardedVideoId;
 #elif UNITY_IOS
 		adUnitId = "ca-app-pub-7242052781619146/1902110508";
+		            adUnitId = RewardedVideoIdIOS;
+
 #endif
 
 		this.rewardedAd = new RewardedAd(adUnitId);
@@ -79,16 +89,15 @@ public class MobileAd : MonoBehaviour
 		adCooldownRemaining = adCooldownTime;
 	}
 
-	public string AndroidAdUnitID;
-	public string IOSUnitID;
+	
 	private void RequestInterstitial()
 	{
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-7242052781619146/6090721233";
-         adUnitId =AndroidAdUnitID;
+         adUnitId =InterstatiolId;
 #elif UNITY_IOS
 		string adUnitId = "ca-app-pub-7242052781619146/4302980935";
-		 adUnitId = IOSUnitID;
+		 adUnitId = InterstatiolIdIOS;
 #endif
 
 		// Initialize an InterstitialAd.
@@ -236,8 +245,11 @@ public class MobileAd : MonoBehaviour
 	{
 #if UNITY_ANDROID
             string adUnitId = "ca-app-pub-3940256099942544/5224354917";
+            adUnitId = RewardedVideoId;
 #else
 		string adUnitId = "unexpected_platform";
+			adUnitId = RewardedVideoIdIOS;
+
 #endif
 
 		this.rewardedAd = new RewardedAd(adUnitId);
