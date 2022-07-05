@@ -9248,7 +9248,6 @@ GameObject:
   - component: {fileID: 980116024}
   - component: {fileID: 980116023}
   - component: {fileID: 980116021}
-  - component: {fileID: 980116022}
   m_Layer: 0
   m_Name: Game Camera
   m_TagString: MainCamera
@@ -9295,23 +9294,6 @@ MonoBehaviour:
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0.5283019, g: 0.0473478, b: 0.0473478, a: 0}
   zemin_material: {fileID: 2100000, guid: e91e64c42dbbf42e18c3ca94dbf1e527, type: 2}
---- !u!114 &980116022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980116019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e030075ba9ba8084e891d8eb7d52c386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fitType: 2
-  pixelsPerUnit: 100
-  playAreaWidth: 550
-  playAreaHeight: 1920
-  updateInterval: 0.1
 --- !u!124 &980116023
 Behaviour:
   m_ObjectHideFlags: 0
@@ -9347,7 +9329,7 @@ Camera:
   far clip plane: 200
   field of view: 60
   orthographic: 1
-  orthographic size: 4.8888893
+  orthographic size: 4.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10687,6 +10669,12 @@ MonoBehaviour:
   adCooldownTime: 60
   adCooldownRedCircle: {fileID: 1761234255}
   adCooldownText: {fileID: 2068406777}
+  BannerId: 
+  InterstatiolId: 
+  RewardedVideoId: 
+  BannerIdIOS: 
+  InterstatiolIdIOS: 
+  RewardedVideoIdIOS: 
 --- !u!4 &1091840090
 Transform:
   m_ObjectHideFlags: 0
@@ -15518,7 +15506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150.00006}
+  m_AnchoredPosition: {x: 0, y: -150.00003}
   m_SizeDelta: {x: 0, y: -300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502412799
@@ -19109,7 +19097,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -125.00012}
+  m_AnchoredPosition: {x: 0, y: -125.00018}
   m_SizeDelta: {x: 0, y: -250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1862917328

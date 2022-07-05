@@ -1933,6 +1933,14 @@ namespace Survival2048
             txtCurrentScore[1].text = "SCORE:" + score.ToString();
             txtCurrentScore[2].text = "Wins:" + wins.ToString();
             txtCurrentScore[3].text = "Wins:" + wins.ToString();
+            if (Level > 0 && (Level % 5 == 0))
+            {
+                txtCurrentScore[5].color=Color.red;
+            }
+            else
+            {
+                txtCurrentScore[5].color=new Color32(103,224,255,1);
+            }
             txtCurrentScore[4].text = "Level:" + Level.ToString();
             txtCurrentScore[5].text = "Level:" + Level.ToString();
             txtCurrentScore[6].text = "Best:" + bestscore.ToString();
