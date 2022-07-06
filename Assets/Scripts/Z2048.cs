@@ -1939,7 +1939,7 @@ namespace Survival2048
             }
             else
             {
-                txtCurrentScore[5].color=new Color32(103,224,255,1);
+                txtCurrentScore[5].color=new Color32(103,224,255,255);
             }
             txtCurrentScore[4].text = "Level:" + Level.ToString();
             txtCurrentScore[5].text = "Level:" + Level.ToString();
