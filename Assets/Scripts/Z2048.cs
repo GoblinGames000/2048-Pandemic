@@ -2014,21 +2014,21 @@ namespace Survival2048
                 return;
             }
 
-
-            if (showInterstitial)
+            if(Session.Instance.ad>=2)
             {
-                if(Session.Instance.ad>=2)
-                {
 
-                    Session.Instance.ad = 0;
-                            mobileAd.ShowInteristitialAd();
-                     showInterstitial = false;
-                }
-                else
-                {
-                    Session.Instance.ad++;
-                }
+                Session.Instance.ad = 0;
+                mobileAd.ShowInteristitialAd();
+                showInterstitial = false;
             }
+            else
+            {
+                Session.Instance.ad++;
+            }
+            // if (showInterstitial)
+            // {
+            //    
+            // }
             gameOverUndoPanel.SetActive(false);
             gameState = GameState.progression;
             stepCount = 0;
