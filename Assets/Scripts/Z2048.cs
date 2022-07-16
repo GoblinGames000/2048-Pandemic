@@ -2017,9 +2017,8 @@ namespace Survival2048
             if(Session.Instance.ad>=2)
             {
 
-                Session.Instance.ad = 0;
                 mobileAd.ShowInteristitialAd();
-                showInterstitial = false;
+             //   showInterstitial = false;
             }
             else
             {

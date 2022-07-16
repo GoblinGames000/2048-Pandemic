@@ -208,6 +208,8 @@ public class MobileAd : MonoBehaviour
     {
 		if (interstitial.IsLoaded())
 		{
+			Session.Instance.ad = 0;
+
 			interstitial.Show();
 		}
 	}
