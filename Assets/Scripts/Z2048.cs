@@ -2013,7 +2013,7 @@ namespace Survival2048
             {
                 return;
             }
-
+            mobileAd.RequestInterstitial();
             if(Session.Instance.ad>=2)
             {
 

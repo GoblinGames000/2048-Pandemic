@@ -90,7 +90,7 @@ public class MobileAd : MonoBehaviour
 	}
 
 	
-	private void RequestInterstitial()
+	public void RequestInterstitial()
 	{
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-7242052781619146/6090721233";
